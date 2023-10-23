@@ -1,0 +1,41 @@
+/* eslint-disable */
+module.exports = {
+  'env': {
+    'commonjs': true,
+    'es2021': true,
+    'node': true,
+    'mocha': true
+  },
+  'extends': [
+    'eslint:recommended',
+    'plugin:prettier/recommended'
+  ],
+  'parserOptions': {
+    'ecmaVersion': 13
+  },
+  'rules': {
+    'indent': [
+      'error',
+      2
+    ],
+    'linebreak-style': [
+      'error',
+      'unix'
+    ],
+    'quotes': [
+      'error',
+      'single'
+    ],
+    'semi': [
+      'error',
+      'always'
+    ],
+    'no-undef': [
+      'warn'
+    ],
+    'prettier/prettier': [
+      'error',
+      { 'singleQuote': true, 'printWidth': 120 }
+    ]
+  }
+};

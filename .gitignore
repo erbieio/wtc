@@ -1,0 +1,14 @@
+hardhat/cache*
+hardhat/artifacts*
+hardhat/deployments
+
+node_modules
+yarn.lock
+package-lock.json
+
+.vscode
+.idea
+
+node/data/log
+node/data/geth
+node/data/geth.ipc

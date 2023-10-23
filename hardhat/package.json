@@ -1,0 +1,27 @@
+{
+  "name": "hardhat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "chain": "hardhat node --network hardhat --no-deploy --hostname 0.0.0.0",
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy",
+    "lint": "eslint --fix .",
+    "test": "hardhat test --network hardhat",
+    "wallet": "hardhat wallet",
+    "accounts": "hardhat accounts --network hardhat",
+    "send": "hardhat send"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "hardhat": "^2.18.2",
+    "hardhat-deploy": "^0.11.43",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
