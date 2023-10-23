@@ -39,8 +39,8 @@ func (w *WTC) loop() {
 		case now := <-w.chanConf:
 
 			log.Println("Update conf at time: ", now)
-		case now := <-ticker.C:
-			log.Println(now)
+		case _ = <-ticker.C:
+			log.Println("service running")
 			// todo: parse and send tx
 		}
 	}
