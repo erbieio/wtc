@@ -15,7 +15,7 @@ var (
 	ChainUrl = "http://127.0.0.1:8545"
 	HexKey   = "7bbfec284ee43e328438d46ec803863c8e1367ab46072f7864c07e0a03ba61fd"
 	HexAddr  = "0xfffffffffffffffffffffffffffffffffffffff0"
-	Interval = 2 * time.Second
+	Interval = 4 * time.Second
 )
 
 const confFile = ".env"

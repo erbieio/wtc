@@ -1,4 +1,4 @@
-package service
+package web3
 
 import (
 	"fmt"

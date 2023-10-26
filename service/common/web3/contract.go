@@ -1,4 +1,4 @@
-package service
+package web3
 
 import (
 	"context"
@@ -46,7 +46,7 @@ func NewContract(url string, hexAddr types.Address, hexKey string) (c *Contract,
 }
 
 // MintNFT 铸造NFT，amount为铸造nft的个数
-func (c *Contract) MintNFT(to types.Address, uri types.Address) (types.Hash, error) {
+func (c *Contract) MintNFT(to types.Address, uri types.Data) (types.Hash, error) {
 	data := "0xe4e2a53a000000000000000000000000" + types.Data(to[2:])
 	data += "0000000000000000000000000000000000000000000000000000000000000040"
 	data += types.Data(fmt.Sprintf("%064x", len(uri)))
